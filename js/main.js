@@ -79,7 +79,7 @@ const removerUltimoDigito = () => {
 // Função que inverte o valor do display
 const inverterSinal = () => {
   novoNumero = true;
-  atualizarDisplay(-display.textContent);
+  atualizarDisplay(-display.textContent.replace(",", "."));
 };
 
 // inserindo a casa decimal no valor e atualizando o display
